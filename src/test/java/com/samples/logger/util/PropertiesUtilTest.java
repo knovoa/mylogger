@@ -24,6 +24,6 @@ public class PropertiesUtilTest {
         assertEquals("root", loggerProperties.getProperty("logger.db.username"));
         assertEquals("root", loggerProperties.getProperty("logger.db.password"));
         assertEquals("org.h2.Driver", loggerProperties.getProperty("logger.db.jdbc.driver"));
-        assertEquals("jdbc:h2:./src/test/resources/log", loggerProperties.getProperty("logger.db.url"));
+        assertEquals("jdbc:h2:mem:test;DB_CLOSE_DELAY=-1", loggerProperties.getProperty("logger.db.url"));
     }
 }
