@@ -1,6 +1,6 @@
-May 05, 2019 2:24:49 AM com.samples.logger.implementation.FileLogger addMessage
+May 06, 2019 11:19:38 AM com.samples.logger.implementation.FileLogger message
 INFO: Everything is good!
-May 05, 2019 2:24:49 AM com.samples.logger.implementation.FileLogger addWarning
+May 06, 2019 11:19:38 AM com.samples.logger.implementation.FileLogger warning
 WARNING: Houston we have a warning!
-May 05, 2019 2:24:49 AM com.samples.logger.implementation.FileLogger addError
+May 06, 2019 11:19:38 AM com.samples.logger.implementation.FileLogger error
 SEVERE: A fatal error occurred!

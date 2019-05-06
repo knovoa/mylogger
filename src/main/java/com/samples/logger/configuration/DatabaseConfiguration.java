@@ -32,9 +32,14 @@ public class DatabaseConfiguration {
         Statement statement = null;
         try {
             connection = getConnection();
-            statement = connection.createStatement();
-            statement.executeUpdate(
-                    "create table IF NOT EXISTS Log(message varchar(255), type int)");
+
+            if (connection.isValid(0)) {
+                statement = connection.createStatement();
+                statement.executeUpdate(
+                        "create table IF NOT EXISTS Log(message varchar(255), type int)");
+
+            }
+
         } catch (SQLException e) {
             throw new RuntimeException("Create table Error", e);
         } finally {
